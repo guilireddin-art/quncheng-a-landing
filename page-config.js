@@ -18,7 +18,7 @@
 
   const defaults = {
     slug,
-    company_name: "富恩資產管理有限公司",
+    company_name: "仲信資融資產管理有限公司",
     line_id: "",
     line_url: "",
     pixel_ids: [],
@@ -40,7 +40,13 @@
         { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
       );
       const rows = response.ok ? await response.json() : [];
-      if (rows[0]) config = { ...defaults, ...rows[0] };
+      if (rows[0]) {
+        config = {
+          ...defaults,
+          ...rows[0],
+          company_name: defaults.company_name
+        };
+      }
     } catch (_) {}
 
     window.PAGE_CONFIG = config;
@@ -52,7 +58,7 @@
     document.querySelectorAll("[data-company-name]").forEach(el => {
       el.textContent = config.company_name;
     });
-    document.title = document.title.replace("富恩資產管理有限公司", config.company_name);
+    document.title = document.title.replace("仲信資融資產管理有限公司", config.company_name);
     document.querySelectorAll("a[href]").forEach(link => {
       const href = link.getAttribute("href");
       if (!href || href.startsWith("#") || href.startsWith("http") || href.startsWith("javascript:")) return;

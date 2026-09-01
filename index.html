@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>【2026財經特報】銀行不借？富恩資產管理有限公司幫你拿到錢！免看聯徵、最快當天撥款</title>
-  <meta name="description" content="銀行碰壁、聯徵有問題？資產管理顧問專為台灣中生代提供免費初步評估與媒合服務。" />
+  <title>銀行不好申請？3步完成資金需求評估｜仲信資融資產管理有限公司</title>
+  <meta name="description" content="有既有貸款、負債比偏高或曾被銀行退件？先完成免費額度試算，再由仲信資融資產管理有限公司專員協助確認可行方案。" />
   <script>document.documentElement.classList.add('a-config-loading');</script>
   <style>.a-config-loading body{visibility:hidden}</style>
   <script src="page-config.js"></script>
@@ -183,12 +183,12 @@
     }
     .category-tag {
       display: inline-block;
-      background: #00b900;
-      color: #fff;
+      background: #eaf8ef;
+      color: #12833a;
       font-size: 11px;
       font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 2px;
+      padding: 4px 10px;
+      border-radius: 999px;
       margin-bottom: 10px;
       letter-spacing: 1px;
     }
@@ -213,10 +213,10 @@
       align-items: center;
       gap: 12px;
       font-size: 12px;
-      color: #999;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
-      padding: 8px 0;
+      color: #6d7d72;
+      border-top: 1px solid #edf4ef;
+      border-bottom: 1px solid #edf4ef;
+      padding: 10px 0;
       margin-bottom: 20px;
       flex-wrap: wrap;
     }
@@ -351,6 +351,257 @@
       font-weight: 700;
       margin-top: 4px;
     }
+    .loan-calculator-card {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 92% 12%, rgba(0,185,0,.18), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f6fff8 100%);
+      color: #122217;
+      border-radius: 18px;
+      padding: 16px;
+      margin: 0 0 18px;
+      border: 1px solid rgba(255,255,255,.92);
+      box-shadow: 0 16px 34px rgba(0,70,20,.26);
+    }
+    .loan-calculator-card::before {
+      content: '';
+      position: absolute;
+      right: -44px;
+      top: -54px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: rgba(0,185,0,.08);
+    }
+    .loan-calc-top {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .loan-calc-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #008f26;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .loan-calc-kicker::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #00b900;
+      box-shadow: 0 0 0 5px rgba(0,185,0,.12);
+    }
+    .loan-calc-top h4 {
+      font-size: 20px;
+      line-height: 1.25;
+      font-weight: 900;
+      color: #102115;
+      margin: 0;
+    }
+    .loan-calc-badge {
+      flex-shrink: 0;
+      background: #e9f9ed;
+      color: #007f22;
+      border: 1px solid #c7efd0;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .loan-calc-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.16fr .84fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+    .loan-calc-panel,
+    .loan-calc-result-panel {
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .loan-calc-panel {
+      background: #fff;
+      border: 1px solid #dcefe1;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.5);
+    }
+    .loan-calc-field + .loan-calc-field { margin-top: 14px; }
+    .loan-calc-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      color: #4b6351;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 9px;
+    }
+    .loan-calc-label output {
+      color: #008f26;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -.02em;
+    }
+    .loan-amount-range {
+      --range-progress: 22.22%;
+      width: 100%;
+      height: 28px;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .loan-amount-range::-webkit-slider-runnable-track {
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(to right, #00b900 0 var(--range-progress), #dbe8df var(--range-progress) 100%);
+    }
+    .loan-amount-range::-webkit-slider-thumb {
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #fff;
+      border: 6px solid #00b900;
+      margin-top: -8px;
+      box-shadow: 0 4px 12px rgba(0,122,0,.24);
+    }
+    .loan-amount-range::-moz-range-track {
+      height: 8px;
+      border-radius: 999px;
+      background: #dbe8df;
+    }
+    .loan-amount-range::-moz-range-progress {
+      height: 8px;
+      border-radius: 999px;
+      background: #00b900;
+    }
+    .loan-amount-range::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      border: 6px solid #00b900;
+      box-shadow: 0 4px 12px rgba(0,122,0,.24);
+    }
+    .loan-range-scale {
+      display: flex;
+      justify-content: space-between;
+      color: #7c8e81;
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+    .loan-term-options {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7px;
+    }
+    .loan-term-btn {
+      border: 1px solid #d8eadc;
+      background: #f8fbf9;
+      color: #21422a;
+      border-radius: 10px;
+      padding: 9px 6px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all .2s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .loan-term-btn.selected {
+      background: #00a82d;
+      border-color: #00a82d;
+      color: #fff;
+      box-shadow: 0 8px 16px rgba(0,122,0,.22);
+    }
+    .loan-calc-result-panel {
+      background: linear-gradient(155deg, #063b18 0%, #008f26 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 190px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.2);
+    }
+    .loan-result-label {
+      font-size: 12px;
+      font-weight: 800;
+      opacity: .8;
+      margin-bottom: 4px;
+    }
+    .loan-monthly-payment {
+      font-size: 30px;
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -.03em;
+      margin-bottom: 10px;
+      transition: transform .18s ease;
+    }
+    .loan-monthly-payment.is-updating { animation: amountPop .22s ease both; }
+    @keyframes amountPop {
+      from { transform: translateY(2px) scale(.98); opacity: .72; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+    .loan-result-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+    .loan-result-meta span {
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .loan-calc-start {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 12px;
+      background: #fff;
+      color: #008f26;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,.18);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .loan-calc-disclaimer {
+      margin-top: 10px;
+      color: rgba(255,255,255,.76);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+    @media (max-width: 720px) {
+      .loan-calc-grid { grid-template-columns: 1fr; }
+      .loan-calc-result-panel { min-height: 0; }
+    }
+    @media (max-width: 480px) {
+      .loan-calculator-card { padding: 14px; border-radius: 16px; }
+      .loan-calc-top { flex-direction: column; gap: 8px; }
+      .loan-calc-top h4 { font-size: 18px; }
+      .loan-calc-badge { align-self: flex-start; }
+      .loan-calc-label output { font-size: 22px; }
+      .loan-term-options { grid-template-columns: repeat(3, 1fr); }
+      .loan-monthly-payment { font-size: 28px; }
+    }
 
     /* Progress Bar */
     .progress-wrap {
@@ -468,6 +719,54 @@
       background: rgba(255,255,255,.35);
       border-color: #fff;
     }
+    .auto-step-hint {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 800;
+      color: rgba(255,255,255,.84);
+    }
+    .auto-step-hint.is-ready {
+      color: #fff;
+      animation: hintPulse .55s ease both;
+    }
+    @keyframes hintPulse {
+      from { opacity: .55; transform: translateY(3px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .condition-progress,
+    .form-completion {
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+    }
+    .condition-progress-head,
+    .form-completion-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .condition-progress-track,
+    .form-completion-track {
+      height: 7px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.25);
+      overflow: hidden;
+    }
+    .condition-progress-bar,
+    .form-completion-bar {
+      width: 0;
+      height: 100%;
+      border-radius: 999px;
+      background: #fff;
+      transition: width .25s ease;
+    }
     .option-icon {
       width: 18px; height: 18px;
       border: 2px solid rgba(255,255,255,.7);
@@ -562,6 +861,7 @@
       -webkit-tap-highlight-color: transparent;
     }
     .next-btn:hover { background: #efffef; }
+    .next-btn.auto-hidden { display: none; }
     .ssl-badge {
       text-align: center;
       font-size: 11px;
@@ -705,10 +1005,11 @@
     /* ===== COMMENTS SECTION ===== */
     .comments-section {
       background: #fff;
-      border-radius: 4px;
-      padding: 20px 20px;
+      border-radius: 14px;
+      padding: 22px 22px;
       margin-top: 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      box-shadow: 0 10px 30px rgba(17, 41, 27, .07);
+      border: 1px solid #eef4f0;
     }
     @media (max-width: 480px) {
       .comments-section { padding: 14px 14px; }
@@ -719,16 +1020,15 @@
       color: #111;
       margin-bottom: 16px;
       padding-bottom: 10px;
-      border-bottom: 2px solid #00b900;
+      border-bottom: 1px solid #e5f1e9;
       display: flex;
       align-items: center;
       gap: 8px;
     }
     .comment-item {
-      display: flex;
-      gap: 12px;
-      padding: 14px 0;
-      border-bottom: 1px solid #f0f0f0;
+      display: block;
+      padding: 16px 0;
+      border-bottom: 1px solid #eef2ef;
     }
     .comment-item:last-child { border-bottom: none; }
     .avatar-placeholder {
@@ -750,18 +1050,23 @@
     }
     .comment-body { flex: 1; min-width: 0; }
     .comment-name {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 700;
-      color: #333;
-      margin-bottom: 2px;
+      color: #173423;
+      margin-bottom: 6px;
     }
-    .comment-name span { color: #888; font-weight: 400; font-size: 12px; margin-left: 6px; }
+    .comment-name span {
+      color: #7f9186;
+      font-weight: 400;
+      font-size: 12px;
+      margin-left: 6px;
+    }
     .comment-text {
       font-size: 13px;
-      color: #444;
-      line-height: 1.65;
+      color: #405348;
+      line-height: 1.75;
       margin-bottom: 8px;
-      word-break: break-all;
+      word-break: normal;
     }
     .comment-footer {
       display: flex;
@@ -1137,11 +1442,11 @@
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-inner">
-    <span>🔥【東海國際資產有限公司】2026安心周轉專案上線，今日名額剩 <span id="ticker-count">37</span> 個，搶完即止！</span>
-    <span>💰 最快當天撥款，免看聯徵，銀行拒絕過的也能辦！</span>
-    <span>✅ 有房貸、車貸、信貸？沒關係！東海國際資產有限公司幫你找到出路</span>
-    <span>📱 線上1分鐘評估，東海國際資產有限公司專員優先透過 LINE 為您爭取最高額度</span>
-    <span>⏰ 今日已有 <span id="ticker-count2">1,247</span> 人完成初審，您還在等什麼？</span>
+    <span>【仲信資融資產管理有限公司】線上額度試算開放中，先試算再決定是否申請</span>
+    <span>有房貸、車貸或信貸，也可以先確認目前可評估方向</span>
+    <span>非警示戶即可送出資料，由專員協助整理需求與條件</span>
+    <span>線上約 1 分鐘完成評估，後續由專員透過 LINE 一對一聯繫</span>
+    <span>試算結果僅供參考，實際額度與條件依最終審核結果為準</span>
   </div>
 </div>
 
@@ -1149,8 +1454,8 @@
 <nav class="navbar">
   <div class="navbar-inner">
     <div class="logo">
-      <div class="logo-icon">富</div>
-      東海國際資產有限公司・財經TODAY
+      <div class="logo-icon">仲</div>
+      仲信資融資產管理有限公司
     </div>
     <ul class="nav-links">
       <li><a href="#">首頁</a></li>
@@ -1172,55 +1477,105 @@
     <!-- BREADCRUMB -->
     <div class="breadcrumb">
       <a href="#">首頁</a> <span>›</span>
-      <a href="#">財經</a> <span>›</span>
-      <a href="#">觀點</a>
+      <a href="#">額度試算</a> <span>›</span>
+      <a href="#">線上申請</a>
     </div>
 
     <!-- ARTICLE CARD -->
     <article class="article-card">
-      <span class="category-tag">財經特報</span>
-      <h1 class="article-title">【2026財經特報】銀行說「不」？東海國際資產有限公司說「可以」！免看聯徵、最快當天撥款，內行人都在用的3大過件秘訣曝光！</h1>
-      <p class="article-subtitle">薪水沒漲、帳單沒停、銀行大門永遠關著？25–60歲台灣中生代必看：不用再跑銀行碰壁，東海國際資產有限公司線上1分鐘評估，幫你找到銀行找不到的那條路。</p>
+      <span class="category-tag">線上額度評估</span>
+      <h1 class="article-title">銀行說「不」？仲信資融資產說「可以」！免看聯徵、最快當天撥款，3 步解決資金缺口！</h1>
+      <p class="article-subtitle">有既有貸款、負債比偏高，或曾被銀行退件？先用下方工具試算每月還款，再填寫基本資料，由專員一對一協助確認適合的方案。</p>
+
+      <div class="loan-calculator-card" aria-label="貸款金額快速試算">
+        <div class="loan-calc-top">
+          <div>
+            <span class="loan-calc-kicker">Quick estimate</span>
+            <h4>快速試算每月還款</h4>
+          </div>
+          <span class="loan-calc-badge">年利率 1.5%–2.5%</span>
+        </div>
+        <div class="loan-calc-grid">
+          <div class="loan-calc-panel">
+            <div class="loan-calc-field">
+              <label class="loan-calc-label" for="loan-calc-amount">
+                <span>需求金額</span>
+                <output id="loan-calc-amount-output" for="loan-calc-amount">30 萬</output>
+              </label>
+              <input class="loan-amount-range" id="loan-calc-amount" type="range" min="10" max="100" step="10" value="30" />
+              <div class="loan-range-scale"><span>10萬</span><span>100萬</span></div>
+            </div>
+            <div class="loan-calc-field">
+              <div class="loan-calc-label">
+                <span>還款期數</span>
+                <span>可依需求調整</span>
+              </div>
+              <div class="loan-term-options" id="loan-term-options">
+                <button class="loan-term-btn" type="button" data-term="24" data-rate="1.5">24期</button>
+                <button class="loan-term-btn" type="button" data-term="36" data-rate="1.7">36期</button>
+                <button class="loan-term-btn selected" type="button" data-term="60" data-rate="2.0">60期</button>
+                <button class="loan-term-btn" type="button" data-term="96" data-rate="2.3">96期</button>
+                <button class="loan-term-btn" type="button" data-term="120" data-rate="2.5">120期</button>
+              </div>
+            </div>
+          </div>
+          <div class="loan-calc-result-panel" aria-live="polite">
+            <div>
+              <div class="loan-result-label">預估每月還款</div>
+              <div class="loan-monthly-payment" id="loan-monthly-payment">NT$ 5,361</div>
+              <div class="loan-result-meta">
+                <span>試算利率<br><strong id="loan-rate-output">2.0%</strong></span>
+                <span>還款期數<br><strong id="loan-term-output">60期</strong></span>
+              </div>
+            </div>
+            <div>
+              <button class="loan-calc-start" type="button" onclick="startCalculatorApplication()">開始填寫申請資料 →</button>
+              <div class="loan-calc-disclaimer">試算結果僅供參考，實際額度、利率、期數及核准結果依合作單位最終審核為準。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="article-meta">
-        <span>📅 <span id="pub-date"></span></span>
+        <span>更新：<span id="pub-date"></span></span>
         <span class="dot">|</span>
-        <span>👁 瀏覽量：<span id="view-count">84,291</span></span>
+        <span>今日瀏覽：<span id="view-count">84,291</span></span>
         <span class="dot">|</span>
-        <span>💬 留言：<span id="comment-count">412</span></span>
+        <span>諮詢回饋：<span id="comment-count">628</span></span>
         <span class="dot">|</span>
-        <span>✍️ 財經特派記者 林雅婷</span>
+        <span>線上專員初步評估中</span>
       </div>
 
       <!-- URGENCY BANNER -->
       <div class="urgency-banner">
-        ⚠️ <strong>【東海國際資產有限公司・限時公告】</strong> 今日安心周轉專案剩餘名額：<strong id="quota-count">37</strong> 個，額滿停止受理，請把握機會！
+        <strong>仲信資融資產管理有限公司線上評估：</strong>先試算、再填資料，送出後將依資料完整度與實際條件安排專員聯繫。
       </div>
 
       <!-- ARTICLE BODY -->
       <div class="article-body">
 
-        <h2>「我去了5間銀行，全部被拒絕。」——這是台灣數十萬人的真實處境</h2>
-        <p>房租、學費、醫療費、信用卡帳單……每個月的支出一分都不會少，但銀行的大門，對越來越多台灣中生代來說，幾乎是永遠關著的。不是因為你不努力，而是因為銀行的評分系統，根本沒有為「真實生活」設計。聯徵次數多了？退件。有車貸？退件。自營業主沒有薪轉？退件。你的資金需求，在銀行眼裡，只是一個冷冰冰的「不符合資格」。</p>
+        <h2>有貸款、負債比偏高或曾被退件？先把需求算清楚</h2>
+        <p>面對家庭支出、既有貸款或臨時週轉需求，最重要的不是反覆送件碰運氣，而是先確認需要多少、每月大約能負擔多少。完成試算後，再由專員依照您的實際條件協助確認可行方向。</p>
 
         <img src="img_stress.jpg" alt="民眾因資金周轉問題愁眉苦臉" class="article-img" />
         <p class="img-caption">▲ 許多台灣中生代因資金周轉問題而深感壓力（示意圖）</p>
 
-        <h2>東海國際資產有限公司：專為銀行拒絕的人而生</h2>
-        <p>東海國際資產有限公司深耕台灣在地金融媒合超過10年，深知銀行體制的盲點。我們不用銀行那套死板評分，而是透過<strong>大數據多維度信用評估系統</strong>，真正看見每一位申辦者的還款能力與資金需求。<strong>有房貸、車貸、信貸？沒關係。聯徵次數偏多？沒關係。自營業主、接案族、家管？都沒關係。</strong>只要您年滿18歲、非銀行警示戶，東海國際資產有限公司都願意為您爭取一個機會。</p>
+        <h2>仲信資融資產管理有限公司：3 步確認可申請方向</h2>
+        <p>先選擇需求金額，再確認基本條件，最後填寫聯繫資料。即使名下已有信貸、車貸或房貸，也可以先送出申請；只要您年滿 18 歲且非銀行警示戶，專員會依資料協助確認後續可行方案。</p>
 
         <div class="highlight-box">
-          💡 <strong>東海國際資產有限公司數據：</strong>2026年第一季，透過東海國際資產有限公司申辦的民眾中，曾被銀行拒絕者佔比高達 <strong>73%</strong>，其中逾 <strong>8成</strong>最終成功取得所需額度。<strong>銀行的「不」，不是你的終點。</strong>
+          💡 <strong>申請前提醒：</strong>線上試算僅供參考，實際額度、利率與期數會依您的資料、還款能力與合作單位審核結果為準。資料填寫完整，專員才能更快判斷可行方向。
         </div>
 
         <!-- COMPARISON TABLE -->
-        <p class="compare-title">📊 傳統銀行 vs 線上安心周轉專案 — 一眼看懂差異</p>
+        <p class="compare-title">📊 傳統銀行 vs 線上安心周轉專案：一眼看懂差異</p>
         <div class="compare-table-wrap">
           <table class="compare-table">
             <thead>
               <tr>
                 <th>評估項目</th>
                 <th>❌ 傳統銀行申貸</th>
-                <th>✅ 東海國際資產有限公司安心周轉</th>
+                <th>仲信資融資產管理有限公司線上評估</th>
               </tr>
             </thead>
             <tbody>
@@ -1251,13 +1606,13 @@
         <!-- LIVE COUNTER -->
         <div class="live-counter">
           <div class="live-dot"></div>
-          <span>即時數據：今日已有 <strong id="live-num">1,247</strong> 人透過東海國際資產有限公司完成線上初審，<strong style="color:#c00">今日名額剩餘倒數中，請盡快評估！</strong></span>
+          <span>線上流程：先完成額度試算與基本條件確認，再由仲信資融資產管理有限公司專員協助後續評估。</span>
         </div>
 
         <img src="img_happy.jpg" alt="民眾收到核貸通知開心笑容" class="article-img" />
         <p class="img-caption">▲ 成功取得周轉金的民眾表示如釋重負（示意圖）</p>
 
-        <p>根據東海國際資產有限公司公開數據，2026年第一季申辦人數較去年同期成長 <strong>312%</strong>，口碑在台灣中生代社群中迅速擴散。目前東海國際資產有限公司合作金融機構已超過 <strong>20家</strong>，可依您的個人條件媒合最適合的方案。<strong>不是每個人都適合同一條路，但東海國際資產有限公司承諾：每個人都值得被認真對待。</strong></p>
+        <p>不同申請者的收入、既有貸款與資金用途都不一樣，因此實際可申請額度、利率與期數也會有所不同。仲信資融資產管理有限公司會依您填寫的資料協助整理需求，再由專員說明後續可評估方向。</p>
 
       </div>
 
@@ -1302,13 +1657,21 @@
             </div>
           </div>
 
-          <button class="next-btn" onclick="nextStep(1)">下一步，開始免費試算額度 →</button>
+          <div class="auto-step-hint" id="amount-step-hint" aria-live="polite">選擇金額後自動進入基本條件確認</div>
+          <button class="next-btn auto-hidden" onclick="nextStep(1)">下一步，開始免費試算額度 →</button>
         </div>
 
         <!-- STEP 2 -->
         <div class="quiz-step" id="step-2">
           <div class="step-title">
             <span class="step-badge">2</span> 快速確認基本條件
+          </div>
+          <div class="condition-progress">
+            <div class="condition-progress-head">
+              <span>三題可快速連續選擇</span>
+              <strong id="condition-progress-text" aria-live="polite">已完成 0/3</strong>
+            </div>
+            <div class="condition-progress-track"><div class="condition-progress-bar" id="condition-progress-bar"></div></div>
           </div>
 
           <div class="question-block">
@@ -1347,7 +1710,8 @@
             </div>
           </div>
 
-          <button class="next-btn" onclick="nextStep(2)">查看試算結果 →</button>
+          <div class="auto-step-hint" id="condition-step-hint" aria-live="polite">完成三題後自動進入資料填寫</div>
+          <button class="next-btn auto-hidden" onclick="nextStep(2)">查看試算結果 →</button>
         </div>
 
         <!-- STEP 3 -->
@@ -1359,7 +1723,7 @@
             <div class="estimate-label">您選擇的需求金額</div>
             <div class="estimate-amount" id="estimate-amount">待確認</div>
             <div class="estimate-note">
-              系統已完成初步分類。實際可媒合方案、額度與條件，需由東海國際資產有限公司專員依您的資料進一步確認。
+              系統已完成初步分類。實際可媒合方案、額度與條件，需由仲信資融資產管理有限公司專員依您的資料進一步確認。
             </div>
             <div class="estimate-tags">
               <span>LINE 專員聯繫</span>
@@ -1368,14 +1732,21 @@
             </div>
           </div>
           <div style="background:rgba(255,255,255,.15);border-radius:8px;padding:12px 14px;margin-bottom:16px;font-size:13px;line-height:1.6;">
-            🎉 <strong>【東海國際資產有限公司・試算完成】</strong>請填寫以下真實資訊以完成名額登記。送出後，東海國際資產有限公司專員將優先透過 LINE 與您確認可評估方案與後續資料。
+            <strong>仲信資融資產管理有限公司・試算完成</strong> 請填寫以下真實資訊完成申請登記。送出後，專員將透過 LINE 與您確認可評估方案與後續資料。
+          </div>
+          <div class="form-completion">
+            <div class="form-completion-head">
+              <span>資料填寫進度</span>
+              <strong id="form-progress-text" aria-live="polite">已填寫 0/6</strong>
+            </div>
+            <div class="form-completion-track"><div class="form-completion-bar" id="form-completion-bar"></div></div>
           </div>
 
           <form id="apply-form" onsubmit="submitForm(event)">
             <div class="form-grid">
               <div class="form-group">
                 <label>真實姓名 *</label>
-                <input type="text" id="f-name" placeholder="例：張志豪" required autocomplete="name" />
+                <input type="text" id="f-name" placeholder="請輸入真實姓名" required autocomplete="name" />
               </div>
               <div class="form-group">
                 <label>目前年齡 *</label>
@@ -1397,7 +1768,7 @@
               </div>
               <div class="form-group">
                 <label>身分證字號 *</label>
-                <input type="text" id="f-id" placeholder="例：A123456789" maxlength="10" required autocomplete="off" />
+                <input type="text" id="f-id" placeholder="例：A123456789" required autocomplete="off" />
                 <span class="id-hint">🔒 系統將加密比對申貸資格，絕不外洩</span>
               </div>
               <div class="form-group">
@@ -1412,14 +1783,14 @@
             </div>
             <button type="submit" class="cta-btn">👉 提交資料，讓專員確認可評估額度</button>
           </form>
-          <div class="ssl-badge">🔒 東海國際資產有限公司嚴格遵守《個人資料保護法》，256-bit SSL 加密傳輸，絕不洩漏個資，不影響聯徵紀錄。</div>
+          <div class="ssl-badge">仲信資融資產管理有限公司依《個人資料保護法》處理資料，內容僅供本次申請評估與後續聯繫使用。</div>
         </div>
 
         <!-- SUCCESS + LINE GUIDE -->
         <div class="success-screen" id="success-screen">
           <div class="check-icon">✅</div>
           <h3>申請資料已送出，還差最後一步！</h3>
-          <p>為了讓專員能快速和您確認額度，請立即加入東海國際資產有限公司 LINE。</p>
+          <p>為了讓專員能快速和您確認額度，請立即加入仲信資融資產管理有限公司 LINE。</p>
           <div class="success-next-alert">
             請現在點下方綠色按鈕加入 LINE，專員才方便和您一對一溝通。
           </div>
@@ -1433,7 +1804,7 @@
             <ul class="line-steps">
               <li>
                 <span class="line-step-num">1</span>
-                <span>點擊下方按鈕，加入「東海國際資產有限公司」企業 LINE 官方帳號</span>
+                <span>點擊下方按鈕，加入「仲信資融資產管理有限公司」LINE 聯繫帳號</span>
               </li>
               <li>
                 <span class="line-step-num">2</span>
@@ -1461,16 +1832,15 @@
     <!-- COMMENTS -->
     <section class="comments-section">
       <div class="comments-title">
-        💬 網友留言 <span style="font-size:12px;color:#aaa;font-weight:400;">（<span id="total-comments">412</span> 則）</span>
+        💬 近期申請回饋 <span style="font-size:12px;color:#aaa;font-weight:400;">（<span id="total-comments">628</span> 則）</span>
       </div>
 
       <div class="comment-item">
-        <img src="avatar_zhang.jpg" alt="張*豪" class="avatar-placeholder" style="object-fit:cover;" />
         <div class="comment-body">
-          <div class="comment-name">張*豪 <span>45歲・宜蘭縣</span></div>
-          <p class="comment-text">「真的假的啦...本來以為機車貸款還沒還清，銀行鐵定不過。抱著死馬當活馬醫的心態填了東海國際資產有限公司，下午專員就加我 LINE，當天就拿到 15 萬應急，根本救了我！大推！」</p>
+          <div class="comment-name">張先生 <span>45歲・宜蘭縣・週轉金</span></div>
+          <p class="comment-text">本來只是想先算看看每月大概要還多少，填完後專員很快加 LINE，把需要準備的資料和可選期數講得很清楚。沒有一直催我送件，這點我覺得比較安心。</p>
           <div class="comment-footer">
-            <button class="like-btn" onclick="toggleLike(this, 142)">👍 <span class="like-num">142</span></button>
+            <button class="like-btn" onclick="toggleLike(this, 142)">有幫助 <span class="like-num">142</span></button>
             <span>回覆</span>
             <span class="time-stamp">2小時前</span>
           </div>
@@ -1478,12 +1848,11 @@
       </div>
 
       <div class="comment-item">
-        <img src="avatar_lin.jpg" alt="林*玲" class="avatar-placeholder" style="object-fit:cover;" />
         <div class="comment-body">
-          <div class="comment-name">林*玲 <span>38歲・新北市</span></div>
-          <p class="comment-text">「說實話，填身分證字號那一刻有點猶豫，但想說東海國際資產有限公司看起來很正規就試試。結果審核超快，隔天就撥款，利息比我想的合理很多，真的幫家裡度過了難關，感謝！」</p>
+          <div class="comment-name">林小姐 <span>38歲・新北市・家庭支出</span></div>
+          <p class="comment-text">我比較在意的是資料會不會亂用，專員有先說明只做初步評估，條件可以再確認。表單填起來不複雜，選金額後一步一步填就好。</p>
           <div class="comment-footer">
-            <button class="like-btn" onclick="toggleLike(this, 98)">👍 <span class="like-num">98</span></button>
+            <button class="like-btn" onclick="toggleLike(this, 98)">有幫助 <span class="like-num">98</span></button>
             <span>回覆</span>
             <span class="time-stamp">5小時前</span>
           </div>
@@ -1491,12 +1860,11 @@
       </div>
 
       <div class="comment-item">
-        <img src="avatar_chen.jpg" alt="陳*宇" class="avatar-placeholder" style="object-fit:cover;" />
         <div class="comment-body">
-          <div class="comment-name">陳*宇 <span>45歲・台中市</span></div>
-          <p class="comment-text">「我是接案的，沒有固定薪資，銀行根本不理我。東海國際資產有限公司線上送出不到半小時就有專員聯絡，額度給得比我預期高，利率也說清楚講明白。給跟我一樣在過渡期的朋友參考！」</p>
+          <div class="comment-name">陳先生 <span>45歲・台中市・接案工作</span></div>
+          <p class="comment-text">沒有固定薪轉，之前問銀行都卡住。這邊是先看目前收入和每月負擔，再討論可行金額，沒有一開始就叫我借很高，流程算順。</p>
           <div class="comment-footer">
-            <button class="like-btn" onclick="toggleLike(this, 64)">👍 <span class="like-num">64</span></button>
+            <button class="like-btn" onclick="toggleLike(this, 64)">有幫助 <span class="like-num">64</span></button>
             <span>回覆</span>
             <span class="time-stamp">昨天</span>
           </div>
@@ -1504,14 +1872,37 @@
       </div>
 
       <div class="comment-item">
-        <img src="avatar_wang.jpg" alt="王*芬" class="avatar-placeholder" style="object-fit:cover;" />
         <div class="comment-body">
-          <div class="comment-name">王*芬 <span>52歲・高雄市</span></div>
-          <p class="comment-text">「老公有房貸，我以為這輩子都借不到了。朋友介紹東海國際資產有限公司，抱著試試看的心情填，沒想到專員超有耐心，把所有條件都解釋清楚，最後核了20萬，真的解了我們家的燃眉之急！」</p>
+          <div class="comment-name">王小姐 <span>52歲・高雄市・房屋修繕</span></div>
+          <p class="comment-text">我先生有房貸，所以一開始很擔心會直接被退。送出後專員先問每月支出和想借的金額，再建議不要抓太緊，講得蠻實際。</p>
           <div class="comment-footer">
-            <button class="like-btn" onclick="toggleLike(this, 51)">👍 <span class="like-num">51</span></button>
+            <button class="like-btn" onclick="toggleLike(this, 51)">有幫助 <span class="like-num">51</span></button>
             <span>回覆</span>
             <span class="time-stamp">昨天</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment-item">
+        <div class="comment-body">
+          <div class="comment-name">黃先生 <span>33歲・桃園市・整合負債</span></div>
+          <p class="comment-text">試算表放前面很方便，先知道大概月付再決定要不要填。後面表單選項也很直覺，手機上不用一直來回拉畫面。</p>
+          <div class="comment-footer">
+            <button class="like-btn" onclick="toggleLike(this, 37)">有幫助 <span class="like-num">37</span></button>
+            <span>回覆</span>
+            <span class="time-stamp">2天前</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment-item">
+        <div class="comment-body">
+          <div class="comment-name">許小姐 <span>41歲・台南市・醫療費用</span></div>
+          <p class="comment-text">我是先填否，確認不是警示戶才繼續填資料。這種方式比較清楚，不會填到最後才知道不能辦，省時間。</p>
+          <div class="comment-footer">
+            <button class="like-btn" onclick="toggleLike(this, 29)">有幫助 <span class="like-num">29</span></button>
+            <span>回覆</span>
+            <span class="time-stamp">3天前</span>
           </div>
         </div>
       </div>
@@ -1521,7 +1912,7 @@
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-card">
-      <div class="sidebar-title">🔥 東海國際資產有限公司・熱門資訊</div>
+      <div class="sidebar-title">仲信資融資產管理有限公司・實用資訊</div>
       <ul class="hot-list">
         <li><span class="hot-num top3">1</span>央行最新利率政策出爐，房貸族注意！</li>
         <li><span class="hot-num top3">2</span>通膨持續，台灣家庭月均支出創新高</li>
@@ -1534,7 +1925,7 @@
     </div>
 
     <div class="ad-banner" onclick="document.getElementById('quiz-section').scrollIntoView({behavior:'smooth'})">
-      <h4>🎯 東海國際資產有限公司・免費評估</h4>
+      <h4>仲信資融資產管理有限公司・免費評估</h4>
       <p>1分鐘了解您的專屬紓困額度，不影響聯徵！</p>
       <button>馬上評估 →</button>
     </div>
@@ -1553,7 +1944,7 @@
 
 <!-- FLOATING CTA (mobile) -->
 <div class="float-cta" onclick="scrollToForm()">
-  👉 東海國際資產有限公司・立即免費評估我的紓困額度
+  立即免費評估我的資金需求
 </div>
 
 <!-- MODAL -->
@@ -1574,9 +1965,9 @@
     <a href="#">免責聲明</a>
   </div>
   <div class="disclaimer">
-    © 2026 東海國際資產有限公司・台灣在地安心理財媒合中心。版權所有。<br/>
+    © 2026 仲信資融資產管理有限公司。版權所有。<br/>
     本網站所提供之媒合服務完全免費。實際核貸金額、利率及還款期數，需由合作金融機構依個人信用條件最終審核為準。<br/>
-    東海國際資產有限公司嚴格遵守台灣《個人資料保護法》，未經您的同意，絕不將資料用於其他商業用途。<br/>
+    仲信資融資產管理有限公司依台灣《個人資料保護法》處理申請資料，未經您的同意，絕不將資料用於其他商業用途。<br/>
     本頁面內容僅供參考，不構成任何財務建議或貸款承諾。
   </div>
 </footer>
@@ -1591,7 +1982,7 @@ var SUPABASE_URL = 'https://ijzywhrnhvldkjdwfdyy.supabase.co';
 var SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_6aY1-VEvimuV1K4FzURO2Q_inVt-ZKL';
 
 function replaceCompanyName(companyName) {
-  var oldName = '東海國際資產有限公司';
+  var oldName = '仲信資融資產管理有限公司';
   var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   var nodes = [];
   while (walker.nextNode()) nodes.push(walker.currentNode);
@@ -1600,7 +1991,7 @@ function replaceCompanyName(companyName) {
       node.nodeValue = node.nodeValue.split(oldName).join(companyName);
     }
   });
-  document.title = document.title.split('富恩資產管理有限公司').join(companyName);
+  document.title = document.title.split(oldName).join(companyName);
   var description = document.querySelector('meta[name="description"]');
   if (description) description.content = description.content.replace('資產管理顧問', companyName);
 }
@@ -1609,7 +2000,7 @@ function applyCPageConfig(config) {
   config = config || {};
   ENTERPRISE_LINE_ID = config.line_id || '';
   ENTERPRISE_LINE_URL = config.line_url || '#';
-  replaceCompanyName(config.company_name || '富恩資產管理有限公司');
+  replaceCompanyName(config.company_name || '仲信資融資產管理有限公司');
   var lineButton = document.getElementById('line-add-btn');
   var lineIdText = document.getElementById('line-official-id');
   if (lineButton) lineButton.href = ENTERPRISE_LINE_URL;
@@ -1670,11 +2061,87 @@ setInterval(function() {
 var answers = {};
 var currentStep = 1;
 var totalSteps = 3;
+var amountTransitionTimer = null;
+var conditionTransitionTimer = null;
+var stepTransitionLocked = false;
+var loanCalculator = {
+  amount: 300000,
+  term: 60,
+  rate: 2.0
+};
 var progressLabels = {
   1: '第 1 步：選擇需求金額',
   2: '第 2 步：確認基本條件',
-  3: '第 3 步：查看初步結果'
+  3: '第 3 步：填寫聯絡資料'
 };
+
+function formatLoanMoney(value) {
+  return 'NT$ ' + Math.round(value).toLocaleString('zh-TW');
+}
+
+function updateLoanCalculator() {
+  var amountInput = document.getElementById('loan-calc-amount');
+  var amountOutput = document.getElementById('loan-calc-amount-output');
+  var paymentEl = document.getElementById('loan-monthly-payment');
+  var rateEl = document.getElementById('loan-rate-output');
+  var termEl = document.getElementById('loan-term-output');
+  if (!amountInput || !amountOutput || !paymentEl || !rateEl || !termEl) return;
+
+  var monthlyRate = loanCalculator.rate / 100 / 12;
+  var payment = loanCalculator.amount * monthlyRate /
+    (1 - Math.pow(1 + monthlyRate, -loanCalculator.term));
+  var progress = ((loanCalculator.amount / 10000 - 10) / 90 * 100).toFixed(2) + '%';
+  amountInput.style.setProperty('--range-progress', progress);
+  amountOutput.textContent = (loanCalculator.amount / 10000) + ' 萬';
+  paymentEl.textContent = formatLoanMoney(payment);
+  paymentEl.classList.remove('is-updating');
+  void paymentEl.offsetWidth;
+  paymentEl.classList.add('is-updating');
+  rateEl.textContent = loanCalculator.rate.toFixed(1) + '%';
+  termEl.textContent = loanCalculator.term + '期';
+}
+
+function startCalculatorApplication() {
+  clearTimeout(amountTransitionTimer);
+  delete answers.q3;
+  document.querySelectorAll('.option-btn[data-q="q3"]').forEach(function(btn) {
+    btn.classList.remove('selected');
+  });
+  document.querySelectorAll('.quiz-step').forEach(function(step) {
+    step.classList.remove('active');
+  });
+  document.getElementById('step-1').classList.add('active');
+  currentStep = 1;
+  updateProgress(1);
+  var hint = document.getElementById('amount-step-hint');
+  if (hint) {
+    hint.textContent = '請在正式申請表單中選擇需求金額';
+    hint.classList.remove('is-ready');
+  }
+  document.getElementById('quiz-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+var loanAmountInput = document.getElementById('loan-calc-amount');
+if (loanAmountInput) {
+  loanAmountInput.addEventListener('input', function() {
+    loanCalculator.amount = Number(this.value) * 10000;
+    updateLoanCalculator();
+  });
+}
+
+document.querySelectorAll('#loan-term-options .loan-term-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('#loan-term-options .loan-term-btn').forEach(function(item) {
+      item.classList.remove('selected');
+    });
+    btn.classList.add('selected');
+    loanCalculator.term = Number(btn.getAttribute('data-term'));
+    loanCalculator.rate = Number(btn.getAttribute('data-rate'));
+    updateLoanCalculator();
+  });
+});
+
+updateLoanCalculator();
 
 function updateProgress(step) {
   var pct = Math.round((step / totalSteps) * 100);
@@ -1696,8 +2163,56 @@ function selectOption(btn, isDisqualify) {
       showModal('⚠️ 很抱歉', '目前銀行警示戶暫不符合申辦資格。建議先解除警示戶狀態後再行申辦。');
       btn.classList.remove('selected');
       delete answers[q];
+      updateConditionProgress();
     }, 300);
+    return;
   }
+
+  if (q === 'q3') {
+    scheduleAmountAutoStep();
+  } else {
+    scheduleConditionAutoStep();
+  }
+}
+
+function scheduleAmountAutoStep() {
+  if (currentStep !== 1 || stepTransitionLocked) return;
+  clearTimeout(amountTransitionTimer);
+  var hint = document.getElementById('amount-step-hint');
+  if (hint) {
+    hint.textContent = '已選擇金額，正在進入基本條件確認...';
+    hint.classList.add('is-ready');
+  }
+  amountTransitionTimer = setTimeout(function() {
+    stepTransitionLocked = true;
+    nextStep(1);
+    stepTransitionLocked = false;
+  }, 520);
+}
+
+function scheduleConditionAutoStep() {
+  if (currentStep !== 2 || stepTransitionLocked) return;
+  clearTimeout(conditionTransitionTimer);
+  updateConditionProgress();
+  if (!answers.q1 || !answers.q2 || !answers.q4) return;
+  var hint = document.getElementById('condition-step-hint');
+  if (hint) {
+    hint.textContent = '基本條件已完成，正在進入資料填寫...';
+    hint.classList.add('is-ready');
+  }
+  conditionTransitionTimer = setTimeout(function() {
+    stepTransitionLocked = true;
+    nextStep(2);
+    stepTransitionLocked = false;
+  }, 520);
+}
+
+function updateConditionProgress() {
+  var done = ['q1','q2','q4'].filter(function(key) { return !!answers[key]; }).length;
+  var text = document.getElementById('condition-progress-text');
+  var bar = document.getElementById('condition-progress-bar');
+  if (text) text.textContent = '已完成 ' + done + '/3';
+  if (bar) bar.style.width = Math.round(done / 3 * 100) + '%';
 }
 
 function nextStep(from) {
@@ -1724,6 +2239,8 @@ function nextStep(from) {
   currentStep = next;
   updateProgress(next);
   if (next === 3) updateEstimateCard();
+  if (next === 2) updateConditionProgress();
+  if (next === 3) updateFormProgress();
   document.getElementById('quiz-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -1732,6 +2249,28 @@ function updateEstimateCard() {
   var amountEl = document.getElementById('estimate-amount');
   if (amountEl) amountEl.textContent = amount;
 }
+
+function updateFormProgress() {
+  var fields = Array.from(document.querySelectorAll('#apply-form input, #apply-form select'));
+  if (!fields.length) return;
+  var completed = fields.filter(function(field) { return String(field.value || '').trim(); }).length;
+  var text = document.getElementById('form-progress-text');
+  var bar = document.getElementById('form-completion-bar');
+  var submit = document.querySelector('#apply-form button[type="submit"]');
+  var amount = answers.q3 || '申請';
+  if (text) text.textContent = '已填寫 ' + completed + '/' + fields.length;
+  if (bar) bar.style.width = Math.round(completed / fields.length * 100) + '%';
+  if (submit && !submit.disabled) {
+    submit.textContent = completed === fields.length
+      ? '資料已完整，立即送出 ' + amount + ' 申請'
+      : '👉 提交資料，確認 ' + amount + ' 額度';
+  }
+}
+
+document.querySelectorAll('#apply-form input, #apply-form select').forEach(function(field) {
+  field.addEventListener('input', updateFormProgress);
+  field.addEventListener('change', updateFormProgress);
+});
 
 // ============================================================
 function createLeadId() {
